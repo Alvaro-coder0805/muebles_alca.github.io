@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="imagenes/Logo_al2.png" width="100px" height="70px" ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Favoritos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Categorias
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="imagenes/portada1.png" alt="Imagen 1">
+               
+                <div class="slide-text">  <h4 class="subtitulo">Transforma tu hogar con elegancia</h4> <br>Nuestros muebles de melamina no solo embellecen tu espacio, <br>  sino que también ofrecen durabilidad y estilo sin igual <br><br>
+                    <a href="" class="info">MAS INFORMACION</a>
+                </div>
+              
+            </div>
+            <div class="swiper-slide">
+                <img src="imagenes/portada2.png" alt="Imagen 2">
+                <div class="slide-text2"> <h4 class="subtitulo">Descubre el equilibrio perfecto entre diseño moderno <br>y accesibilidad</h4> <br>Con nuestros muebles de melamina, cada <br> rincón de tu hogar refleja sofisticación <br>y funcionalidad <br><br>
+                    <a href="" class="info">MAS INFORMACION</a>
+                </div>
+               
+            </div>
+            <div class="swiper-slide">
+                <img src="imagenes/portada3.png" alt="Imagen 3">
+                <div class="slide-text2"><h4 class="subtitulo">Haz una inversión inteligente en tu hogar</h4><br>Nuestros muebles de melamina combinan estética <br> y resistencia, brindando un toque de distinción <br> y calidad a tu espacio <br><br>
+                    <a href="" class="info">MAS INFORMACION</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true
+            },
+        });
+    </script>
+    <div class="logo">
+         <img src="imagenes/Logo_muebles-sinfondo.png" width="200px" alt="">
+    </div>
+    <div class="primerseccion">
+      <main>
+          <section >
+              <div class="principal"><img src="imagenes/fotoprin.jpeg" class="fotoprin" width="600px" height="550px" alt=""></div>
+          </section>
+           <aside >
+               <div class="textoinfor">
+                   <p> <b>Muebles Alca </b>es una empresa especializada en la fabricación y diseño de muebles de melamina, ofreciendo soluciones prácticas y estéticas para el hogar y la oficina.  Nuestra pasión por el mobiliario de alta calidad nos impulsa a crear productos que combinan durabilidad, funcionalidad y estilo. <br> 
+                   <br>
+                   <b>¿Qué hacemos?</b> <br> <br>
+                   En <b> Muebles Alca</b>, nos enfocamos en:</p>
+                   <ul>
+                        <li><b>Fabricación de Muebles de Melamina:</b> Utilizamos melamina de alta calidad, un material conocido por su resistencia, versatilidad y fácil mantenimiento. Nuestros muebles están diseñados para ser duraderos y estéticamente agradables.</li>
+                         <li><b>Muebles a Medida:</b> Ofrecemos soluciones a medida para maximizar el uso del  espacio en cualquier entorno, desde cocinas y dormitorios hasta oficinas y salas de estar.</li>
+                         <li><b>Calidad y Servicio:</b> Nos comprometemos a proporcionar productos que cumplen con los más altos estándares de calidad. Además, nuestro equipo de atención al cliente está siempre disponible para ofrecer asesoramiento y apoyo antes, durante y después de la compra</li>
+                   </ul>
+
+                   <p>Descubre cómo nuestros muebles de melamina pueden transformar tus espacios con funcionalidad y elegancia. <br> ¡En <b>Muebles Alca</b>, estamos aquí para ayudarte a hacer realidad tu visión de interiores!
+
+                    </p>
+               </div>
+           </aside>
+      </main>
+    </div>
+
+    <br>
+    <div>
+        <h3 class="suti">NUESTRAS SECCIONES</h3>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="imagenes/seccion-rope.jpeg" class="card-img-top"  alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Muebles para Dormitorio</h5>
+              <p class="card-text">Transforma tu espacio de descanso con nuestros muebles para dormitorio, diseñados para combinar funcionalidad y estilo. Armarios personalizados, cómodas y más, adaptados a tus necesidades.</p>
+              <a href="" class="boton-pro">Ver Mas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="imagenes/sec-escritorio.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Muebles-Escritorios</h5>
+              <p class="card-text">Crea un ambiente de trabajo eficiente y elegante con nuestros muebles de oficina. Escritorios modernos y estanterías que optimizan el espacio y potencian tu productividad.</p>
+              <a href="" class="boton-pro">Ver Mas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="imagenes/secc_cocina.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Muebles para Cocina</h5>
+              <p class="card-text">Haz de tu cocina el corazón de tu hogar con nuestros muebles hechos a medida. Diseños innovadores que combinan estética y practicidad para un espacio donde disfrutar cada momento.</p>
+              <a href="" class="boton-pro">Ver Mas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="imagenes/secc-baño.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Muebles para Baño</h5>
+              <p class="card-text">Aprovecha al máximo el espacio en tu baño con nuestros muebles funcionales y elegantes. Desde lavabos flotantes hasta unidades de almacenamiento, diseñados para adaptarse a cualquier estilo.</p>
+              <a href="" class="boton-pro">Ver Mas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="imagenes/sec-toca.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Muebles-Tocadores</h5>
+                <p class="card-text">Dale un toque de glamour a tu rutina diaria con nuestros tocadores personalizados. Equipados con espejos iluminados y almacenamiento inteligente para todos tus productos de belleza.</p>
+                <a href="" class="boton-pro">Ver Mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="imagenes/sec-sala.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Muebles para sala</h5>
+                <p class="card-text">Crea un ambiente acogedor y moderno en tu sala con nuestros muebles hechos a medida. Centros de entretenimiento y estanterías que combinan diseño contemporáneo con funcionalidad.</p>
+                <a href="" class="boton-pro">Ver Mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="imagenes/secc-nego.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Muebles para negocio</h5>
+                <p class="card-text">Optimiza la presentación y el almacenamiento en tu negocio con nuestros muebles comerciales. Vitrinas y estanterías diseñadas para exhibir tus productos de manera atractiva y organizada, maximizando el espacio y la visibilidad.</p>
+                <a href="" class="boton-pro">Ver Mas</a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
